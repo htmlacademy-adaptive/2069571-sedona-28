@@ -1,7 +1,7 @@
-# Личный проект «Седона» 
+# Личный проект «Седона»
 
-* Студент: [Роман Волков](https://up.htmlacademy.ru/adaptive/28/user/2069571).
-* Наставник: `Неизвестно`.
+- Студент: [Роман Волков](https://up.htmlacademy.ru/adaptive/28/user/2069571).
+- Наставник: `Ирина Малиновская` (https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
