@@ -1,0 +1,97 @@
+.container {
+  width: 320px;
+  background-color: #ffffff;
+  font-style: normal;
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+}
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+}
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "PT Sans";
+  font-display: swap;
+  src: url("../fonts/ptsans.woff") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "PT Sans";
+  font-display: swap;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+}
+.main-header__logo {
+  display: block;
+  width: 185px;
+  height: 96px;
+  margin: 0 auto;
+}
+.main-header__logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.main-nav {
+  background-color: #81b3d2;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  min-height: 223px;
+}
+.hero__container {
+  min-height: 389px;
+  background-image: url("../img/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero__slogan {
+  display: block;
+  width: 282px;
+  height: 214px;
+  margin: 0 auto;
+}
+.hero__slogan img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.advantages__item--background {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+.advantages__text--colored {
+  color: #ffffff;
+}
+.advantages__item--background-dark {
+  background-color: #eeeeee;
+}
+.photos__name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.photos__author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+/*# sourceMappingURL=style.css.map */
