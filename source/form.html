@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Город Седона</title>
 
   <link rel="stylesheet" href="css/style.css">
@@ -39,58 +40,36 @@
   <main class="form-wrapper">
     <section class="hero-form">
       <h1 class="visually-hidden">Отзыв о Седоне</h1>
-      <div class="hero-form__wrapper">
         <div class="hero-form__slogan">
-          <img src="/source/img/sedona-logo.svg" alt="Седона" width="229" height="39">
+          <img src="img/sedona-logo.svg" alt="Седона" width="229" height="39">
         </div>
-      </div>
     </section>
     <section class="feedback">
-      <form class="modal-form form" action="https://echo.htmlacademy.ru/" method="POST">
-        <div class="feedback__wrapper">
-          <header class="feedback__header">
+      <div class="feedback__wrapper">
+        <header class="feedback__header">
             <h3 class="feedback__title title">Оставь свой отзыв</h3>
             <p class="feedback__text text">Помогите нашим отелям стать лучше! <br>Оставьте отзыв о них, а также о<br> посещенных вами<br> достопримечательностях</p>
           </header>
-          <section class="full-name">
-            <fieldset class="full-name__group">
-              <legend class="full-name__title title">Представьтесь:</legend>
-              <ul class="full-name__list list-reset">
-                <li class="full-name__item full-name__item--name">
-                  <label class="form__label label" for="user-name">Имя&#10034;:</label>
-                  <input class="name-input form-input" type="text" name="user-name" id="user-name" placeholder="Имя" value="Пётр" required>
-                </li>
-                <li class="full-name__item full-name__item--surname">
-                  <label class="form__label label" for="user-surname">Фамилия&#10034;:</label>
-                  <input class="surname-input form-input" type="text" name="user-surname" id="user-surname" placeholder="Фамилия" value="Пустота" required>
-                </li>
-                <li class="full-name__item full-name__item--patronymic">
-                  <label class="form__label label" for="user-patronymic">Отчество:</label>
-                  <input class="patronymic-input form-input" type="text" name="user-patronymic" id="user-patronymic" placeholder="Отчество" value="Викторович">
-                </li>
-              </ul>
-            </fieldset>
-            <!-- <header class="fullname__header">
-            <h3 class="fullname__title title">Представьтесь:</h3>
-          </header>
-          <div class="form__wrapper form__wrapper--name">
-            <label class="form__label label" for="user-name">Имя&#10034;:</label>
-            <div class="name-input__wrapper">
-              <input class="name-input form-input" type="text" name="user-name" id="user-name" placeholder="Имя" value="Пётр" required>
-            </div>
-          </div>
-          <div class="form__wrapper form__wrapper--surname">
-            <label class="form__label label" for="user-surname">Фамилия&#10034;:</label>
-            <div class="surname-input__wrapper">
-              <input class="surname-input form-input" type="text" name="user-surname" id="user-surname" placeholder="Фамилия" value="Пустота" required>
-            </div>
-          </div>
-          <div class="form__wrapper form__wrapper--patronymic">
-            <label class="form__label label" for="user-patronymic">Отчество:</label>
-            <div class="patronymic-input__wrapper">
-              <input class="patronymic-input form-input" type="text" name="user-patronymic" id="user-patronymic" placeholder="Отчество" value="Викторович">
-            </div>
-          </div> -->
+          <form class="modal-form form" action="https://echo.htmlacademy.ru/" method="POST">
+            <div class="form-group">
+              <section class="full-name">
+                <fieldset class="full-name__group">
+                <legend class="full-name__title title">Представьтесь:</legend>
+                <ul class="full-name__list list-reset">
+                  <li class="full-name__item full-name__item--name">
+                    <label class="form__label label" for="user-name">Имя&#10034;:</label>
+                    <input class="name-input form-input" type="text" name="user-name" id="user-name" placeholder="Имя" value="Пётр" required>
+                  </li>
+                  <li class="full-name__item full-name__item--surname">
+                    <label class="form__label label" for="user-surname">Фамилия&#10034;:</label>
+                    <input class="surname-input form-input" type="text" name="user-surname" id="user-surname" placeholder="Фамилия" value="Пустота" required>
+                  </li>
+                  <li class="full-name__item full-name__item--patronymic">
+                    <label class="form__label label" for="user-patronymic">Отчество:</label>
+                    <input class="patronymic-input form-input" type="text" name="user-patronymic" id="user-patronymic" placeholder="Отчество" value="Викторович">
+                  </li>
+                </ul>
+              </fieldset>
           </section>
           <section class="contacts">
             <fieldset class="contacts__group">
@@ -106,22 +85,8 @@
                 </li>
               </ul>
             </fieldset>
-            <!--<header class="contacts__header">
-            <h3 class="contacts__title title">Контактная информация:</h3>
-          </header>
-          <div class="form__wrapper form__wrapper--phone">
-            <label class="form__label label" for="user-phone">Контактный телефон&#10034;:</label>
-            <div class="phone-input__wrapper">
-              <input class="phone-input form-input" type="text" name="user-phone" id="user-phone" placeholder="Введите телефон" required>
-            </div>
-          </div>
-          <div class="form__wrapper form__wrapper--mail">
-            <label class="form__label label" for="user-mail">Электронная почта&#10034;:</label>
-            <div class="mail-input__wrapper">
-              <input class="mail-input form-input" type="text" name="user-mail" id="user-mail" placeholder="Введите e-mail" required>
-            </div>
-          </div>-->
           </section>
+        </div>
           <section class="impressions">
             <fieldset class="impressions__group impressions__group--radio">
               <legend class="impressions__title title">Ваше общее впечатление:</legend>
@@ -174,9 +139,9 @@
             <button class="submit__button button" type="submit">Отправить отзыв</button>
             <span class="submit__message">&#10034; — обязательные поля</span>
           </div>
-        </div>
-      </form>
-    </section>
+        </form>
+    </div>
+  </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
