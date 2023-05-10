@@ -3,6 +3,9 @@
 }
 
 .main-nav {
+  min-height: 55px;
+  width: 100%;
+  position: relative;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -11,20 +14,21 @@
 .main-nav__toggle {
   width: 23px;
   height: 22px;
-  background-color: #ffffff;
+  background-color: transparent;
   border: none;
   cursor: pointer;
-  top: 0;
-  right: 0;
+  top: 17px;
+  right: 20px;
   display: block;
-  z-index: 2;
   position: absolute;
-  margin-top: 17px;
-  margin-left: 25px;
-  margin-bottom: 17px;
+  z-index: 2;
 
   &:hover {
     opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -39,9 +43,19 @@
   box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
 }
 
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+}
+
 .main-nav--opened .main-nav__toggle {
-  top: 0;
-  right: 0;
+  top: 28px;
+  right: 20px;
 
   &::before,
   &::after {
@@ -51,7 +65,7 @@
     right: 0;
     width: 28px;
     height: 4px;
-    background-color: #81b3d2;
+    background-color: #ffffff;
   }
 
   &::before {
@@ -64,13 +78,7 @@
   }
 }
 
-.main-nav--opened .main-nav__wrapper {
-  position: absolute;
-  top: 0;
-  z-index: 10;
-}
-
-.main-nav__list a {
+.main-nav__link {
   display: block;
   padding-top: 17px;
   padding-bottom: 12px;
@@ -79,12 +87,19 @@
   border-top: 1px solid #ffffff33;
   background-color: #81b3d2;
   color: #ffffff;
-}
-
-.main-nav__item a {
   padding-right: 70px;
   padding-left: 70px;
   text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -92,13 +107,52 @@
     width: @tablet-width;
   }
 
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .main-nav__item {
+    display: flex;
     min-height: 56px;
+    width: 20%;
     justify-content: space-around;
+  }
+
+  .main-nav__item:nth-child(4n+3) {
+    margin-left: 20%;
+  }
+
+  .main-nav__link {
     background-color: #ffffff;
     color: #000000;
+    min-height: 56px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 18px 0 17px;
+    border: none;
+
+    &:hover {
+      color: #669ec0;
+    }
+
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+    }
+  }
+
+  .main-nav__link--current {
+    color: #766357;
   }
 
   .main-nav__toggle {
